@@ -1,0 +1,8 @@
+{
+    "SimilarProducts": {
+        "Product": "Product",
+        "Catalog": "Catalog",
+        "Similar_Products": "Similar Products",
+        "AssociatedProducts": "Associated Products"
+    }
+}

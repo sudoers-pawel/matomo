@@ -1,0 +1,59 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8">   
+    <title>Blockchain MSP</title>
+      <script type="text/javascript">
+var _paq = window._paq || [];
+/* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+_paq.push(['trackPageView']);
+_paq.push(['enableLinkTracking']);
+(function() {
+  var u="//analytics-test.kazaronline.pl/";
+  _paq.push(['setTrackerUrl', u+'matomo.php']);
+  _paq.push(['setSiteId', '2']);
+  var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+  g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+})();
+      </script>
+    
+  </head>
+	<body>
+		<script>
+console.log("# start");
+
+url = "https://analytics-test.kazaronline.pl/index.php?module=API&method=SimilarProducts.getAnswerToLife&format=json";
+//url = "https://analytics-test.kazaronline.pl/?module=API&method=Referrers.getKeywords&idSite=2&date=yesterday&period=day&format=xml&filter_limit=10";
+
+var req = new XMLHttpRequest();
+req.open('GET', url, true); /* Argument trzeci, wartość true, określa, że żądanie ma być asynchroniczne */
+req.onreadystatechange = function (aEvt) {
+  if (req.readyState == 4) {
+    if(req.status == 200) {
+      console.log('res:');
+      console.log(req.responseText);
+    } else {
+      console.log("Błąd podczas ładowania strony\n");
+    }
+  }
+};
+req.send(null); 
+
+
+console.log("# end");
+    </script>
+
+
+    <button id="demo" onclick="myFunction()">Click me to change my text color.</button>
+
+
+
+
+
+
+
+
+
+  </body>
+</html>
+
