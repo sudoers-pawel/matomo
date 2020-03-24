@@ -31,7 +31,7 @@ class API extends \Piwik\Plugin\API
      */
   public function getAnswerToLife($truth = true)
   {
-      //test
+
     $sql = "select * from matomo_log_conversion_item limit 1";
     $res =  Db::fetchAll($sql);
     return $res;
